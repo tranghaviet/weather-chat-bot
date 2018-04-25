@@ -14,12 +14,12 @@
 
 .chat li.left .chat-body
 {
-  margin-left: 60px;
+  margin: 0 60px;
 }
 
 .chat li.right .chat-body
 {
-  margin-right: 60px;
+  margin: 0 60px;
 }
 
 
@@ -36,9 +36,12 @@
 
 .panel-body
 {
-  overflow-y: scroll;
-  height: 600px;
-  /*max-height: calc(85vh - 10px);*/
+  overflow-y: auto;
+  height: 700px;
+}
+
+.chat-content-out {
+  text-align: right;
 }
 
 ::-webkit-scrollbar-track
