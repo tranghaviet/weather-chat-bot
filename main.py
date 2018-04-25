@@ -1,20 +1,18 @@
 from flask import *
 
-app = Flask(__name__, static_url_path="")
+app = Flask(__name__, static_url_path="/static")
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/messages', methods=['POST'])
+@app.route('/m', methods=['POST'])
 def response_message():
-
-    image = request.form['m']
+    m = request.form['m']
 
     return json.dumps(
         {
-            'status': 'OK',
-            'filePath': "img/" + filename
+            'message': m,
         }
     )
 
