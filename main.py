@@ -10,11 +10,16 @@ def index():
 def response_message():
     m = request.form['m']
 
-    return json.dumps(
-        {
-            'message': m,
-        }
-    )
+
+
+    return json.dumps({
+        'message': m,
+    })
+
+    return json.dumps({
+        'message': "Sorry I don't understand"
+    })
 
 if __name__ == '__main__':
+    app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
     app.run(**app_options)
