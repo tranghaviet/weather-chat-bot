@@ -59,6 +59,7 @@
     const message = inputElement.val();
     inputElement.val('');
     insertMessageOut(message);
+    scrollToNewestMessage();
 
     $.ajax({
       url: '/m',
