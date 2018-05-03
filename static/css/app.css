@@ -42,6 +42,11 @@
 
 .chat-content-out {
   text-align: right;
+  margin-top: 15px !important;
+}
+
+.chat-content-in {
+  margin-top: 15px !important;
 }
 
 ::-webkit-scrollbar-track
